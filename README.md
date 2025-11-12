@@ -1,2 +1,1 @@
-# mackenzierossiter.github.io
-My personal website displaying my experience and professional career
+Mackenzie Rossiter's Personal Site
