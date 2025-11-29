@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+/* Make text size bigger so it looks good in full screen*/
+:root {
+    --teal: rgb(83, 119, 137);
+    --black: rgb(0, 0, 0);
+    --white: rgb(255, 255, 255);
+    --sky-blue: rgb(192, 208, 220);
+    --beige: rgb(234, 230, 225);
+    --navy: rgb(46, 63, 84);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--beige);
+}
+
+html {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: var(--black);
+}
+
+body {
+    padding: 1em;
+    min-height: 100vh;
+    background-color: var(--beige);
+    font-size: larger;
+}
+header {
+    padding: 1em 0;
+}
+
+/* NAV STYLE */
+
+nav {
+    box-shadow: 3px 3px 5px  rgba(0, 0, 0, .1);
+    
+}
+
+nav ul {
+    width: 100%; /* spans full width of container*/
+    list-style: none;
+    display: flex; /* these three lines move everything to right*/
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav li {
+    font-weight: 500;
+}
+
+nav a {
+    height: 100%; /*match height of list items*/
+    padding: 0 1em; /*space between each item*/
+    text-decoration: none;
+    display: flex;
+    align-items: center; /*align vertically*/
+    color: var(--black);
+    font-size: 1em;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+nav li:first-child {
+    margin-right:auto;
+    font-size: 1.5em;
+}
+
+
+.sidebar {
+    /*stack side bar on the right covering everything else*/
+    /*https://www.youtube.com/watch?v=U8smiWQ8Seg*/
+    /*start at 6:24*/
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 350px; /* change to em?*/
+    z-index: 999; /*ensures side bar is always above everything else*/
+    background-color: var(--beige);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: none; /*display links from top to bottom*/
+    flex-direction: column; /*display links from top to bottom*/
+    align-items: flex-start; /*uncenter the links*/
+    justify-content: flex-start; /*uncenter the links*/
+}
+
+.sidebar li {
+    width: 100%;
+    padding-top: 40px;
+    padding-right: 30px;
+    background-color: var(--beige);
+}
+
+.sidebar a {
+    background-color: var(--beige);
+    font-weight: 500;
+    font-size: 1.15em;
+}
+
+/* the close icon in sidebar*/
+.sidebar span {
+    background-color: white;
+}
+
+#menuButton {
+    display: none;
+    margin-left:auto;
+}
+
+/*Tablet View*/
+/*Could have to change the 800 depending on links in nav*/
+@media(max-width: 800px ) {
+    /*hdieOnMobile is the class so now any element with that class is not visible on Tablet devices*/
+    .hideOnMobile {
+        display: none;
+    }
+
+    #menuButton {
+        display: block;
+    }
+}
+
+/*Mobile View*/
+@media(max-width: 400px ) {
+    /*sidebae is the class so now any element with that class is not visible on Tablet devices*/
+    .sidebar {
+        width: 100%;
+    }
+}
+
+
+/*Intro Image and Text Style*/
+
+img {
+    width: 100%; /*fill 100% of its container's width*/
+    max-width: 400px;
+    max-height: 500px;
+    border-radius: 10%;
+    object-fit: cover;/*image covers entire retainer while maintaining its aspect ratio*/
+    object-position: center top;
+    vertical-align: middle;
+} 
+
+.wrapper-intro {
+    padding: 15px 30px;
+    display: flex; /*aligns child elements horizontally */
+    flex-wrap: nowrap; /*moves child elements to next line if there is not enough space*/
+    align-items: cetner; /*vertically align items to center*/
+    justify-content: space-around; /*allows child elements to take equal space around them*/
+    gap: 5rem;
+}
+
+.intro {
+    flex: 1; /*ensures element takes up as much space as possible in its flex container*/
+    padding: 8em 0;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* centers children horizontally */
+}
+
+.intro h1 {
+    text-align: center;
+}
+.intro p {
+    padding: 10px 130px;
+}
+
+/*Icons*/
+.socials {
+    display: flex;
+    gap: 20px;
+    margin-top: 15px;
+    align-items: center;
+}
+
+.socials a:hover {
+    fill:var(--accent-color);
+}
+
+.socials a svg {
+    height: 35px;
+    width: 35px;
+}
+
+@media (min-width: 1200px) {
+    img {
+        margin-left: 2em;
+    }
+}
+@media (max-width: 900px) {
+    .intro p {
+        padding: 10px 20px;
+    }
+}
+
+@media (max-width: 730px) {
+    .wrapper-intro {
+        flex-wrap: wrap
+    }
+    .intro {
+        padding: 0 0;
+    }
+
+    .intro p {
+        padding: 10px 0px;
+    }
+}
+
+@media(max-width: 655px) {
+    .wrapper-intro {
+        display: block;
+        flex-wrap: wrap;
+    }
+    
+    img {
+        height: 400px;
+    }
+    
+    .profile {
+        text-align: center;
+    }
+    
+    .intro {
+        padding: 20px 0px;
+    }
+}
+
