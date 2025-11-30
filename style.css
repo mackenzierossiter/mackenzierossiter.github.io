@@ -20,13 +20,13 @@ html {
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: var(--black);
 }
-
 body {
     padding: 1em;
     min-height: 100vh;
     background-color: var(--beige);
     font-size: larger;
 }
+
 header {
     padding: 1em 0;
 }
@@ -303,3 +303,40 @@ h2#title {
 .work-experience ul {
     padding-left: 2em;
 }
+
+
+/*Skills*/
+.skills h1 {
+    text-align:center;
+}
+
+.wrapper > div {
+    height: 200px;
+    width: 220px;
+    padding: 15px 15px;
+    border: 3px var(--teal) solid;
+    border-radius: 10px;
+}
+
+.skills .wrapper h2 {
+    text-align: center;
+}
+
+.skills .wrapper p {
+    padding-top: 10px;
+    text-align: center;
+}
+
+.skills .wrapper > div:hover {
+    background-color: var(--teal);
+    transition: .5s;
+}
+
+.skills .wrapper > div:hover *{
+    background-color: var(--teal);
+    transition: .5s;
+    color: white;
+}
+
+
+
