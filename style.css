@@ -310,7 +310,7 @@ h2#title {
     text-align:center;
 }
 
-.wrapper > div {
+.skills .wrapper > div {
     height: 200px;
     width: 220px;
     padding: 15px 15px;
