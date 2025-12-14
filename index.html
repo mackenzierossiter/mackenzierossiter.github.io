@@ -16,20 +16,22 @@
                 <span onclick = closeSidebar() class="material-symbols-outlined">
                     close
                 </span>
-                <li> <a href="">Home</a></li>
-                <li> <a href="">Education</a></li>
-                <li> <a href="">Experience</a></li>
-                <li> <a href="">Involvments</a></li>
-                <li> <a href="">Volunteer</a></li>
+                <li> <a href="#">Home</a></li>
+                <li> <a href="#education">Education</a></li>
+                <li> <a href="#experience">Experience</a></li>
+                <li> <a href="#projects">Projects</a></li>
+                <li> <a href="#stem-outreach">STEM Outreach</a></li>
+                <li> <a href="#orgs">Campus Organizations</a></li>
             </ul>
             
             <ul class = "nav_table">
                 <li > <a href="">Mackenzie Rossiter</a></li>
                 <li class = "hideOnMobile" > <a href="">Home</a></li>
-                <li class = "hideOnMobile" > <a href="">Education</a></li>
-                <li class = "hideOnMobile" > <a href="">Experience</a></li>
-                <li class = "hideOnMobile" > <a href="">Involvments</a></li>
-                <li class = "hideOnMobile" > <a href="">Volunteer</a></li>
+                <li class = "hideOnMobile" > <a href="#education">Education</a></li>
+                <li class = "hideOnMobile" > <a href="#experience">Experience</a></li>
+                <li class = "hideOnMobile" > <a href="#projects">Projects</a></li>
+                <li class = "hideOnMobile" > <a href="#stem-outreach">Stem Outreach</a></li>
+                <li class = "hideOnMobile" > <a href="#orgs">Campus Organizations</a></li>
                 <span onclick = showSidebar() id = "menuButton" class="material-symbols-outlined">
                     menu
                 </span>
@@ -48,26 +50,9 @@
             }
         </script>
 
-        <!-- <a class = "cta" href = "#"><button>Contact</button></a> -->
+        
     </header>
-        <!-- <div class = "flex-container">
-            <img height = "400px" width = "350px" src="images/headshot.jpg" alt="">
-            <div class = "text-container">
-                <h1>Mackenzie Rossiter</h1>
-                <h2>Computer Science Student</h2>
-                <a href="" class = "cta-button">Download my Resume</a>
-                <a href="" class = "cta-button">LinkedIn</a>
-                <a href="" class = "cta-button">Github</a>
-
-                <p>I'm Mackenzie, Lorem ipsum dolor sit amet consectetur 
-                    adipisicing elit. Rem enim sequi, iste veritatis 
-                    perspiciatis perferendis eveniet deleniti distinctio 
-                    assumenda soluta facere quae, a nemo ipsam possimus
-                    accusantium commodi repellat corrupti recusandae fuga.
-                    Modi, asperiores soluta quisquam aut aliquam explicabo fugiat.
-                </p>
-            </div>
-        </div> -->
+    
         <!-- image and text container-->
         <div class = "wrapper">
             <!--Image container-->
@@ -154,7 +139,7 @@
         </div>
 
         <!-- Work Experience -->
-         <div class = work-experience>
+         <div class = work-experience id = "experience">
             <h1>Work Experience</h1>
 
             <div class = "wrapper" id = "work-experience">
@@ -239,7 +224,7 @@
         </div>
 
         <!-- Project Experience -->
-         <div class = work-experience>
+         <div class = work-experience id = "projects">
             <h1>Projects</h1>
 
             <div class = "wrapper" id = "work-experience">
@@ -287,7 +272,112 @@
         </div>
 
         <!-- STEM OUTREACH -->
-        <div class = "stem-outreach">
+        <div class = "stem-outreach" id = "stem-outreach">
+            <h1>STEM Outreach</h1>
+            <!-- The Top STEM outreach Elements -->
+            <div class = "wrapper" id = "stem-top">
+                
+                <div class = "top-left">
+                    <img src="images/ambassadorOutreach1.png" alt="">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum repellat ducimus, 
+                        ad harum iure inventore esse doloremque veniam illum provident?
+                    </p>
+                </div>
+                <div class = "top-right">
+                    <img src="images/stemCorp.jpeg" alt="">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum repellat ducimus, 
+                        ad harum iure inventore esse doloremque veniam illum provident?
+                    </p>
+                </div>
+
+                <div class = "gears">
+                    <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960"  fill="#537789"><path d="m234-480-12-60q-12-5-22.5-10.5T178-564l-58 18-40-68 46-40q-2-13-2-26t2-26l-46-40 40-68 58 18q11-8 21.5-13.5T222-820l12-60h80l12 60q12 5 22.5 10.5T370-796l58-18 40 68-46 40q2 13 2 26t-2 26l46 40-40 68-58-18q-11 8-21.5 13.5T326-540l-12 60h-80Zm40-120q33 0 56.5-23.5T354-680q0-33-23.5-56.5T274-760q-33 0-56.5 23.5T194-680q0 33 23.5 56.5T274-600ZM592-40l-18-84q-17-6-31.5-14.5T514-158l-80 26-56-96 64-56q-2-18-2-36t2-36l-64-56 56-96 80 26q14-11 28.5-19.5T574-516l18-84h112l18 84q17 6 31.5 14.5T782-482l80-26 56 96-64 56q2 18 2 36t-2 36l64 56-56 96-80-26q-14 11-28.5 19.5T722-124l-18 84H592Zm56-160q50 0 85-35t35-85q0-50-35-85t-85-35q-50 0-85 35t-35 85q0 50 35 85t85 35Z"/></svg> 
+                </div> 
+                
+            </div>
+
+            <!-- The bottom STEM outreach Elements -->
+            <div class = "wrapper" id = "stem-bottom">
+                
+                <div class = "computer">
+                    <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960"  fill="#537789"><path d="M40-120v-80h880v80H40Zm120-120q-33 0-56.5-23.5T80-320v-440q0-33 23.5-56.5T160-840h640q33 0 56.5 23.5T880-760v440q0 33-23.5 56.5T800-240H160Zm0-80h640v-440H160v440Zm0 0v-440 440Z"/></svg>
+                </div>
+                <div class = "bottom-left">
+                    <img src="images/madistem.png" alt="">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum repellat ducimus, 
+                        ad harum iure inventore esse doloremque veniam illum provident?
+                    </p>
+                </div>
+                <div class = "bottom-right">
+                    <img src="images/digital.png" alt="">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum repellat ducimus, 
+                        ad harum iure inventore esse doloremque veniam illum provident?
+                    </p>
+                </div>
+                
+            </div>
+
+        </div>
+
+
+        <!-- Campus Organizations -->
+        <div class = "orgs" id = "orgs">
+            <h1>Campus Organizations</h1>
+
+            <!-- Top Section -->
+
+            <div class = wrapper>
+                <div class = "aoeDirector">
+                    <h2>Alpha Omega Epsilon</h2>
+                    <h3>Director of Academic and Professional Committee</h3>
+                    <p> 
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, sapiente? 
+                        Repellat reprehenderit architecto vitae accusantium vero? Iusto illo quam quo 
+                        soluta vero! Accusantium quas blanditiis rem nobis perspiciatis reiciendis est.
+                    </p>
+                </div>
+
+                <div class = "aoeHead">
+                    <h2>Alpha Omega Epsilon</h2>
+                    <h3>Head of Academic and Professional Committee</h3>
+                    <p> 
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, sapiente? 
+                        Repellat reprehenderit architecto vitae accusantium vero? Iusto illo quam quo 
+                        soluta vero! Accusantium quas blanditiis rem nobis perspiciatis reiciendis est.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Bottom Section -->
+            <div class = "wrapper">
+
+            
+                <div class = "aoeChair">
+                    <h2>Alpha Omega Epsilon</h2>
+                    <h3>Chair of Public Relations</h3>
+                    <p> 
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, sapiente? 
+                        Repellat reprehenderit architecto vitae accusantium vero? Iusto illo quam quo 
+                        soluta vero! Accusantium quas blanditiis rem nobis perspiciatis reiciendis est.
+                    </p>
+                </div>
+
+                <div class = "witMember">
+                    <h2>Women in Technology</h2>
+                    <h3>Member</h3>
+                    <p> 
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, sapiente? 
+                        Repellat reprehenderit architecto vitae accusantium vero? Iusto illo quam quo 
+                        soluta vero! Accusantium quas blanditiis rem nobis perspiciatis reiciendis est.
+                    </p>
+                </div>
+            </div>
+            
+        </div>
 
 
         </div>

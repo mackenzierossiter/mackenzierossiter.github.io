@@ -7,6 +7,7 @@
     --sky-blue: rgb(192, 208, 220);
     --beige: rgb(234, 230, 225);
     --navy: rgb(46, 63, 84);
+    --light-blue: rgb(193, 224, 242);
 }
 
 * {
@@ -23,7 +24,7 @@ html {
 body {
     padding: 1em;
     min-height: 100vh;
-    background-color: var(--beige);
+    background-color: var(--beige); 
     font-size: larger;
 }
 
@@ -88,6 +89,12 @@ nav li:first-child {
     justify-content: flex-start; /*uncenter the links*/
 }
 
+/* Get rid of the blue highlight when you click on the sidebar */
+nav a,
+.sidebar a {
+    -webkit-tap-highlight-color: transparent;
+}
+
 .sidebar li {
     width: 100%;
     padding-top: 40px;
@@ -103,7 +110,7 @@ nav li:first-child {
 
 /* the close icon in sidebar*/
 .sidebar span {
-    background-color: white;
+    background-color: var(--beige);
 }
 
 #menuButton {
@@ -113,7 +120,7 @@ nav li:first-child {
 
 /*Tablet View*/
 /*Could have to change the 800 depending on links in nav*/
-@media(max-width: 800px ) {
+@media(max-width: 903px ) {
     /*hdieOnMobile is the class so now any element with that class is not visible on Tablet devices*/
     .hideOnMobile {
         display: none;
@@ -122,6 +129,8 @@ nav li:first-child {
     #menuButton {
         display: block;
     }
+
+
 }
 
 /*Mobile View*/
@@ -217,7 +226,7 @@ nav li:first-child {
     }
 }
 
-@media (max-width: 730px) {
+@media (max-width: 750px) {
     .wrapper {
         flex-wrap: wrap
     }
@@ -281,6 +290,28 @@ nav li:first-child {
 #education .intro p {
     padding: 10px 30px;
 }
+@media (max-width: 850px) {
+    #education img {
+        width: 250px;
+        height: 300px;
+    }
+}
+
+
+@media (max-width: 790px) {
+    #education img {
+        display: none;
+    }
+
+    #education .intro p {
+        width: 500px;
+    }
+    #education {
+        display: block;
+        width: fit-content;   /* <-- needed for auto margins to work */
+        margin: 0 auto;
+    }
+}
 
 
 /* work Experience section*/
@@ -332,11 +363,282 @@ h2#title {
     transition: .5s;
 }
 
-.skills .wrapper > div:hover *{
+.skills .wrapper > div:hover * {
     background-color: var(--teal);
     transition: .5s;
     color: white;
 }
 
+@media (max-width: 875px) {
+    .skills .wrapper > div {
+        height: 250px;
+    }
+}
+
+@media (max-width: 775px) {
+
+    .skills .wrapper {
+        display: flex;
+        flex-wrap: wrap;           /* allows wrapping to multiple rows */
+        justify-content: center;   /* center items horizontally */
+        gap: 16px;                 /* spacing between divs */
+    }
+
+    .skills .wrapper > div {
+        height: 200px;
+        flex: 0 0 45%;             /* each div takes ~45% of row width */
+        max-width: 300px;          /* optional cap */
+    }
+}
+
+@media (max-width: 555px) {
+    .skills .wrapper > div {
+        height: 200px;
+    }
+
+    .skills .wrapper {
+        display: block;
+        width: fit-content;   /* <-- needed for auto margins to work */
+        margin: 0 auto;
+    }
+}
 
 
+/* STEM OUTREACH*/
+
+
+/*top left img*/
+.stem-outreach .top-left img {
+    width: 100% ;
+    max-width: 300px;
+    border-radius: 10%;
+    margin-bottom: 1em;
+    border: 3px var(--teal) solid;
+    object-fit: cover;/*image covers entire retainer while maintaining its aspect ratio*/
+    object-position: center top right;
+}
+
+/*all other images*/
+.stem-outreach img {
+    width: 100% ;
+    max-width: 350px;
+    border-radius: 10%;
+    margin-bottom: 1em;
+    border: 3px var(--teal) solid;
+    object-fit: cover;/*image covers entire retainer while maintaining its aspect ratio*/
+    object-position: center top;
+}
+
+
+.stem-outreach .wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    align-items: start;
+    gap: clamp(12px, 3vw, 32px);
+}
+
+.stem-outreach h1 {
+    text-align: center;
+}
+
+
+.stem-outreach p {
+    max-width: 300px;
+    text-align: center;
+    width: 100%;
+}
+
+/* Center the picture and their text beneath*/
+.top-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* centers vertically */
+    align-items: center;     /* centers horizontally */
+}
+
+.top-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* centers vertically */
+    align-items: center;     /* centers horizontally */
+    padding-top: 2.4em; /*need to align bottom of this text box with left text box*/
+}
+
+.bottom-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* centers vertically */
+    align-items: center;     /* centers horizontally */
+}
+
+
+.bottom-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* centers vertically */
+    align-items: center;     /* centers horizontally */
+    padding-top: 1em;
+}
+
+#stem-top {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+    gap: 150px;
+    align-items: center;
+}
+
+#stem-bottom {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+    gap: 150px;
+    align-items: center;
+}
+
+.computer {
+    padding-left: 2em;
+    max-width: 250px;
+    width: 100%;
+    max-height: 250px;
+    height: 100%
+}
+
+.gears {
+    max-width: 250px;
+    width: 100% ;
+    max-height: 250px;
+    height: 100%
+}
+
+
+/* Change Height of top left image to better match the rest*/
+@media(max-width: 1300px ) {
+
+    .stem-outreach .top-left img {
+        max-height: 300px;
+        height: 100%;
+    }
+}
+
+@media(max-width: 1100px ) {
+
+    .stem-outreach .top-left img {
+        max-height: 200px;
+        height: 100%;
+    }
+}
+
+@media (max-width: 900px) {
+    .stem-outreach .top-left img {
+        max-height: 150px;
+        height: 100%;
+    }
+
+}
+@media (max-width: 850px) {
+    .stem-outreach .top-left img {
+    width: 200px;
+    }
+
+    /*all other images*/
+    .stem-outreach img {
+        width: 200px;
+    }
+
+    .computer {
+        display: none;
+    }
+
+    .gears {
+        display: none;
+    }
+
+    #stem-top.wrapper, #stem-bottom.wrapper {
+        display: flex;
+        justify-content: center; /* center children horizontally */
+        flex-wrap: wrap;         /* allow children to wrap on smaller screens */
+        gap: 20px;               /* optional spacing between children */
+    }
+}
+
+@media(max-width: 718px) {
+    .stem-outreach p {
+        width: 500px;
+    }
+
+
+    .stem-outreach .top-left img {
+        max-width: 300px;
+        width: 100%;
+        max-height: 300px;
+        height: 100%
+    }
+
+    /*all other images*/
+    .stem-outreach img {
+        width: 300px;
+    }
+}
+
+
+/* Campus Organizations*/
+
+.orgs {
+    padding-top: 2em;
+}
+
+.orgs h1 {
+    text-align: center;
+    padding-bottom: 1em;
+}
+
+.orgs h2 {
+    padding-top: 3em;
+}
+
+
+.orgs h3 {
+    text-align: center;
+    max-width: 350px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: .5em;
+}
+
+
+.orgs .wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 375px); /* fixed column width */
+    justify-content: center;   /* centers the whole grid */
+    gap: 150px;                  /* constant gap between items */
+}
+
+.orgs .wrapper > div {
+    
+    text-align: center;
+    border: 3px var(--teal) solid;
+    border-radius: 400px 400px 0 0;
+    height: 400px;
+    max-width: 375px;
+    width: 100%;
+    overflow: hidden;
+}
+
+        
+/* change to the orgs sections*/
+.orgs .wrapper > div:hover {
+    background-color: var(--teal);
+    transition: .5s;
+}
+
+.orgs .wrapper > div:hover * {
+    background-color: var(--teal);
+    transition: .5s;
+    color: white;
+}
+
+@media (max-width:998px) {
+    .orgs .wrapper {
+        gap: 20px;  
+    } 
+}
