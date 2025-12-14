@@ -14,19 +14,20 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: var(--beige);
 }
+
 
 html {
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: var(--black);
 }
 body {
-    padding: 1em;
+    padding: 0;
     min-height: 100vh;
     background-color: var(--beige); 
     font-size: larger;
 }
+
 
 header {
     padding: 1em 0;
@@ -319,6 +320,7 @@ nav a,
 /* work Experience section*/
 .work-experience {
     padding-top: 30px;
+    padding: 1em;
 }
 .work-experience h1 {
     text-align: center
@@ -586,6 +588,7 @@ h2#title {
 
 .orgs {
     padding-top: 2em;
+    padding-bottom: 2em;
 }
 
 .orgs h1 {
@@ -644,3 +647,38 @@ h2#title {
         gap: 20px;  
     } 
 }
+
+
+/* Footer Section */
+footer {
+    background-color: var(--teal);
+    text-align: center;
+    padding-bottom: 1em;
+    color: rgba(255, 255, 255, 0.85);
+    
+}
+
+footer h1 {
+    background-color: var(--teal);
+    padding-top: .5em;
+}
+
+footer p {
+    background-color: var(--teal);
+}
+
+footer .socials {
+    background-color: var(--teal);
+    display: flex;              
+    justify-content: center;    /* center horizontally */
+    align-items: center;        /* center vertically */
+    gap: 20px;            
+}
+
+footer .socials a {
+    background-color: var(--teal);
+    fill: rgba(255, 255, 255, 0.85);
+          
+}
+
+
