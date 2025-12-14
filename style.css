@@ -665,6 +665,8 @@ footer h1 {
 
 footer p {
     background-color: var(--teal);
+    padding-left: .5em;
+    padding-right:.25em;
 }
 
 footer .socials {
