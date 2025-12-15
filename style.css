@@ -44,6 +44,7 @@ nav {
     background-color: var(--beige);
     box-shadow: 3px 3px 5px rgba(0, 0, 0, .1);
     z-index: 1000;
+    padding-top: 1em;
 }
 
 nav ul {
