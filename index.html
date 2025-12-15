@@ -10,23 +10,25 @@
 </head>
 <body>
     <header>
+        <!-- todo:
+        side bar nav, once you click on an item, have the sidebar disappear -->
         <!-- <div class = "logoName"><a href="#">Mackenzie Rossiter</a></div> -->
         <nav>
             <ul class = "sidebar">
-                <span onclick = closeSidebar() class="material-symbols-outlined">
+                <span onclick = closeSidebar() id = "closeButton" class="material-symbols-outlined">
                     close
                 </span>
-                <li> <a href="#">Home</a></li>
-                <li> <a href="#education">Education</a></li>
-                <li> <a href="#experience">Experience</a></li>
-                <li> <a href="#projects">Projects</a></li>
-                <li> <a href="#stem-outreach">STEM Outreach</a></li>
-                <li> <a href="#orgs">Campus Organizations</a></li>
+                <li> <a href="#" onclick = closeSidebar() >Home</a></li>
+                <li> <a href="#education" onclick = closeSidebar() >Education</a></li>
+                <li> <a href="#experience" onclick = closeSidebar() >Experience</a></li>
+                <li> <a href="#projects" onclick = closeSidebar() >Projects</a></li>
+                <li> <a href="#stem-outreach" onclick = closeSidebar() >STEM Outreach</a></li>
+                <li> <a href="#orgs" onclick = closeSidebar() >Campus Organizations</a></li>
             </ul>
             
             <ul class = "nav_table">
                 <li > <a href="">Mackenzie Rossiter</a></li>
-                <li class = "hideOnMobile" > <a href="">Home</a></li>
+                <li class = "hideOnMobile" > <a  href="">Home</a></li>
                 <li class = "hideOnMobile" > <a href="#education">Education</a></li>
                 <li class = "hideOnMobile" > <a href="#experience">Experience</a></li>
                 <li class = "hideOnMobile" > <a href="#projects">Projects</a></li>
@@ -78,10 +80,9 @@
                     
                 </div>
 
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                    Eos blanditiis eum iste nobis aspernatur fugiat vitae, adipisci 
-                    a saepe mollitia debitis laboriosam veritatis 
-                    reprehenderit sint quo aut fuga nostrum distinctio.
+                <p>Hi, I’m Mackenzie!  I am a junior computer science major at James Madison University with a minor in mathematics.  
+                    I am interested in software development and teaching.  Outside of work and school, I enjoy reading, the beach and
+                     spending team with family and friends.  I’m excited to see where my skills and experiences take me post-grad!
                 </p>
 
             </div>
@@ -96,14 +97,19 @@
                 <h1>James Madison University</h1>
                 <h3>Expected Graduation: May 2027</h2>
                 <br>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                    Eos blanditiis eum iste nobis aspernatur fugiat vitae, adipisci 
-                    a saepe mollitia debitis laboriosam veritatis 
-                    reprehenderit sint quo aut fuga nostrum distinctio.
+                <p>I am expected to graduate JMU in spring of 2027 with a Bachelor of Science 
+                    in Computer Science.  During my time at JMU, I am also working towards completing 
+                    a minor in math.  This minor has allowed me to hone my problem solving skills to 
+                    make me a better computer scientist.
+
                 </p>
                 <br>
                 <h3>Relevant Coursework</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, corrupti neque dicta eius sapiente harum necessitatibus id. Laboriosam, quos iure?</p>
+                <p>Computer Systems II, Computer Systems I, Discrete Structures II, Discrete Structures I, 
+                    Software Engineering, Algorithms and Data Structures, Advanced Programming, Intro to 
+                    Programming, Intro to Probability and Statistics, Calculus II, Information in Contemporary 
+                    Societey, Critical Questions in Education, Psychology: Life Span of Human Development
+                </p>
             </div>
 
             <!--Image container-->
@@ -149,15 +155,16 @@
                 
             </div>
             <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero voluptatibus nostrum 
-                    esse praesentium corrupti deleniti mollitia a vel, est beatae tenetur quae? 
-                    Debitis sit quam rerum esse officiis minus, quos accusamus enim, eveniet dignissimos 
-                    laboriosam ipsam repellendus dolorem hic aliquam unde ea praesentium pariatur sint 
-                    maiores eos minima. Fuga eum tempore et doloribus ullam ea error, rem totam veritatis 
-                    fugiat aliquam, alias corrupti autem nesciunt architecto. Nulla laborum reprehenderit 
-                    tempora nesciunt, animi fugit dolores natus. Enim, iure fugiat necessitatibus temporibus 
-                    animi voluptates dolores, dolorem repudiandae odit adipisci asperiores consectetur vitae 
-                    doloremque, eius ex provident fuga! Adipisci tempore at voluptatibus ex!
+                As a Software Engineering Intern for BAE Systems, I worked on three main projects.  
+                The Pull Request Tool, the Turnover Tool, and improving the Women in Tech program 
+                materials.  With the Pull Request Tool, I used the BitBucket REST API to display git 
+                pull request information for each repository and their respective sub-repositories.  
+                I used Docker to allow for an easier development and deployment experience.  This tool
+                 completed a task that used to take 2 hours, take 5 minutes.  For the Turnover Tool, 
+                 I created a list of changes and fixes needed to make the web app more efficient and
+                  usable.  My work for the WiT program included researching new materials like arduinos 
+                  boards, receivers, sensors and more to make the program more effective for students.  
+                  I then presented my findings to the leader of the WiT program.  
             </p>
             <br>
             <br>
@@ -169,15 +176,15 @@
                 
             </div>
             <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero voluptatibus nostrum 
-                    esse praesentium corrupti deleniti mollitia a vel, est beatae tenetur quae? 
-                    Debitis sit quam rerum esse officiis minus, quos accusamus enim, eveniet dignissimos 
-                    laboriosam ipsam repellendus dolorem hic aliquam unde ea praesentium pariatur sint 
-                    maiores eos minima. Fuga eum tempore et doloribus ullam ea error, rem totam veritatis 
-                    fugiat aliquam, alias corrupti autem nesciunt architecto. Nulla laborum reprehenderit 
-                    tempora nesciunt, animi fugit dolores natus. Enim, iure fugiat necessitatibus temporibus 
-                    animi voluptates dolores, dolorem repudiandae odit adipisci asperiores consectetur vitae 
-                    doloremque, eius ex provident fuga! Adipisci tempore at voluptatibus ex!
+                My specific position as a Lead CS Ambassador is tour coordinator.  This means 
+                I communicate with prospective students, their families, and my fellow CS 
+                Ambassadors to arrange tours for students interested in becoming a part of the 
+                JMU CS department.  In addition, I organize all tours of the department during 
+                JMU’s open house and admitted students day.  As an ambassador, I meet weekly 
+                with a team of 12 to plan professional, social, and academic events for all 
+                students in the CS department.  This includes events like Game Night, duck 
+                decorating, career fair preparation workshops and more.  
+
             </p>
             <br>
             <br>
@@ -189,15 +196,14 @@
                 
             </div>
             <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero voluptatibus nostrum 
-                    esse praesentium corrupti deleniti mollitia a vel, est beatae tenetur quae? 
-                    Debitis sit quam rerum esse officiis minus, quos accusamus enim, eveniet dignissimos 
-                    laboriosam ipsam repellendus dolorem hic aliquam unde ea praesentium pariatur sint 
-                    maiores eos minima. Fuga eum tempore et doloribus ullam ea error, rem totam veritatis 
-                    fugiat aliquam, alias corrupti autem nesciunt architecto. Nulla laborum reprehenderit 
-                    tempora nesciunt, animi fugit dolores natus. Enim, iure fugiat necessitatibus temporibus 
-                    animi voluptates dolores, dolorem repudiandae odit adipisci asperiores consectetur vitae 
-                    doloremque, eius ex provident fuga! Adipisci tempore at voluptatibus ex!
+                    Sunrise Day Camp is the only full summer day camp offered to 
+                    kids with cancer and their siblings free of charge.  As the STEAM 
+                    Specialist, I work in the STEAM shack teaching kids ages 3-16 coding, 
+                    robotics, 3D printing and more.  While at Sunrise, I quickly had to 
+                    change my lesson plans to meet different language, learning and medical 
+                    needs.  This job taught me how to quickly adapt to my surroundings and 
+                    the importance of STEM being accessible to every student.
+
             </p>
 
 
@@ -210,15 +216,12 @@
                 
             </div>
             <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero voluptatibus nostrum 
-                    esse praesentium corrupti deleniti mollitia a vel, est beatae tenetur quae? 
-                    Debitis sit quam rerum esse officiis minus, quos accusamus enim, eveniet dignissimos 
-                    laboriosam ipsam repellendus dolorem hic aliquam unde ea praesentium pariatur sint 
-                    maiores eos minima. Fuga eum tempore et doloribus ullam ea error, rem totam veritatis 
-                    fugiat aliquam, alias corrupti autem nesciunt architecto. Nulla laborum reprehenderit 
-                    tempora nesciunt, animi fugit dolores natus. Enim, iure fugiat necessitatibus temporibus 
-                    animi voluptates dolores, dolorem repudiandae odit adipisci asperiores consectetur vitae 
-                    doloremque, eius ex provident fuga! Adipisci tempore at voluptatibus ex!
+                As a Code Coach, I taught students aged 8 - 14 Scratch and Python.  I would 
+                program games and teach those games to students as part of my weekly lesson plan.  
+                Along the way students learned basic computer science concepts like loops, 
+                conditional statements, events and more.  I taught students how to create many different 
+                games, from fruit ninja to guess the number.  This position taught me the importance 
+                of classroom management, collaboration with coworkers and student centered instruction. 
             </p>
 
         </div>
@@ -228,43 +231,112 @@
             <h1>Projects</h1>
 
             <div class = "wrapper" id = "work-experience">
+                <div class = "projectTitle">
+                    <h2 id = "title">Duck Hunt</h2>
+                    <a style = "--accent-color: rgb(147, 61, 175)" href="https://github.com/mackenzierossiter/CS345_F24">
+                            <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>GitHub</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                    </a>
+                </div>
                 
-                <h2 id = "title">Duck Hunt</h2>
                 <h3 id = "details">JavaScript | August 2024 - December 2024</h3>
                 
             </div>
             <ul>
-                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit fuga dolor nemo natus. Placeat, debitis?</li>
-                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit fuga dolor nemo natus. Placeat, debitis?</li>
-                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit fuga dolor nemo natus. Placeat, debitis?</li>
+                <li>Directed a 5-person team to design a game in p5.js, facilitating progress tracking and problem-solving </li>
+                <li>Adapted to obstacles and challenges by utilizing Agile techniques and Scrum framework</li>
+                <li>Presented potentially shippable product increment every week to the professor</li>
             </ul>
             <br>
             <br>
 
             <div class = "wrapper" id = "work-experience">
-                
-                <h2 id = "title">Y86-64 Interpreter</h2>
+                 <div class = "projectTitle">
+                    <h2 id = "title">Y86-64 Interpreter</h2>
+                    <a style = "--accent-color: rgb(147, 61, 175)" href="https://github.com/mackenzierossiter/Systems_y86_C_Project">
+                            <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>GitHub</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                    </a>
+                </div>
                 <h3 id = "details">C | February 2025 - May 2025</h3>
                 
             </div>
             <ul>
-                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit fuga dolor nemo natus. Placeat, debitis?</li>
-                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit fuga dolor nemo natus. Placeat, debitis?</li>
-                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit fuga dolor nemo natus. Placeat, debitis?</li>
+                <li>Implemented a Y86 instruction set interpreter, simulating a 6-stage von Neumann CPU architecture</li>
+                <li>Developed full instruction cycle support including branching, memory, arithmetic, and more</li>
+                <li>Handled instruction, pointer, and memory errors via CPU state codes</li>
             </ul>
             <br>
             <br>
 
             <div class = "wrapper" id = "work-experience">
+                 <div class = "projectTitle">
+                    <h2 id = "title">Multi-Processing & IPC</h2>
+                    <a style = "--accent-color: rgb(147, 61, 175)" href="https://github.com/mackenzierossiter/CS361_Project2">
+                            <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>GitHub</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                    </a>
+                </div>
+                <h3 id = "details">C | November 2025</h3>
                 
-                <h2 id = "title">MadZip Utility</h2>
+            </div>
+            <ul>
+                <li>Implemented a multi-process manufacturing simulation using fork()/exec, coordinating a Sales process, Supervisor, and multiple concurrent Factory processes.</li>
+                <li>Integrated inter-process communication with System V shared memory, message queues, and POSIX named semaphores to safely synchronize shared state, logging, and process rendezvous.</li>
+                <li>Built robust process lifecycle and signal-handling logic, including abnormal termination, critical-section protection, and final aggregated reporting.</li>
+            </ul>
+            <br>
+            <br>
+
+            <div class = "wrapper" id = "work-experience">
+                <div class = "projectTitle">
+                    <h2 id = "title">MadZip Utility</h2>
+                    <a style = "--accent-color: rgb(147, 61, 175)" href="https://github.com/mackenzierossiter/Data_Structures_Algorithms_Projects/tree/main/src/pas/huffman">
+                            <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>GitHub</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                    </a>
+                </div>
+
                 <h3 id = "details">Java |  November 2024</h3>
                 
             </div>
             <ul>
-                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit fuga dolor nemo natus. Placeat, debitis?</li>
-                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit fuga dolor nemo natus. Placeat, debitis?</li>
-                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit fuga dolor nemo natus. Placeat, debitis?</li>
+                <li>Created a utility to compress and decompress files using a Huffman coding process</li>
+                <li>Ensured proper error handling with IOException and preserves source file integrity</li>
+                <li>Applied knowledge of priority queues, trees, mappings, and file I/O in Java</li>
+            </ul>
+            <br>
+            <br>
+
+            <div class = "wrapper" id = "work-experience">
+                <div class = "projectTitle">
+                    <h2 id = "title">Pac Man</h2>
+                    <a style = "--accent-color: rgb(147, 61, 175)" href="https://github.com/mackenzierossiter/Advanced_Programming_Java_Projects/tree/main/src/hws/hw8">
+                            <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>GitHub</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                    </a>
+                </div>
+
+                <h3 id = "details">Java |  October 2023</h3>
+                
+            </div>
+            <ul>
+                <li>Implemented a 2D arcade-style game in Java using object-oriented principles, including inheritance, abstract classes, interfaces, and polymorphism.</li>
+                <li>Ensured proper error handling with IOException and preserves source file integrity</li>
+                <li>Applied knowledge of priority queues, trees, mappings, and file I/O in Java</li>
+            </ul>
+            <br>
+            <br>
+
+            <div class = "wrapper" id = "work-experience">
+                <div class = "projectTitle">
+                    <h2 id = "title">Personal Portfolio Website</h2>
+                    <a style = "--accent-color: rgb(147, 61, 175)" href="https://github.com/mackenzierossiter/mackenzierossiter.github.io">
+                            <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>GitHub</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                    </a>
+                </div>
+
+                <h3 class = "portfolio" id = "details">HTML, CSS |  November - December 2025</h3>
+                
+            </div>
+            <ul>
+                <li>Designed and deployed a portfolio website using HTML and CSS, showcasing experience, projects, outreach, and technical experiences.</li>
+                <li>Deployed via GitHub Pages, leveraging version control with Git for iterative development.</li>
             </ul>
             <br>
             <br>
@@ -279,16 +351,23 @@
                 
                 <div class = "top-left">
                     <img src="images/ambassadorOutreach1.png" alt="">
+                    <h4>Middle School Outreach</h4>
+                    <br>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum repellat ducimus, 
-                        ad harum iure inventore esse doloremque veniam illum provident?
+                        Ambassadors often get opportunities to teach middle school students 
+                        computer science concepts for about an hour.  For example, in the 
+                        photo above I was using Finch Robots to teach functions and loops.
                     </p>
                 </div>
                 <div class = "top-right">
                     <img src="images/stemCorp.jpeg" alt="">
+                    <h4>STEM Corps</h4>
+                    <br>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum repellat ducimus, 
-                        ad harum iure inventore esse doloremque veniam illum provident?
+                        STEM Corp is a club at JMU where students are able to travel to the 
+                        local elementary school to teach kids in grades K-5 basic engineering 
+                        concepts.  In the photo above, I was teaching my group about Rube Goldberg 
+                        machines.
                     </p>
                 </div>
 
@@ -306,16 +385,24 @@
                 </div>
                 <div class = "bottom-left">
                     <img src="images/madistem.png" alt="">
+                    <h4>MadiSTEM</h4>
+                    <br>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum repellat ducimus, 
-                        ad harum iure inventore esse doloremque veniam illum provident?
+                        MadiSTEM is a conference for middle school girls to learn about STEM.  
+                        In the past, I have helped teach workshops that focus on different 
+                        research techniques and geology.  I love being able to interact with 
+                        these girls and encourage them to explore different fields in STEM.
                     </p>
                 </div>
                 <div class = "bottom-right">
                     <img src="images/digital.png" alt="">
+                    <h4>DIGITAL</h4>
+                    <br>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum repellat ducimus, 
-                        ad harum iure inventore esse doloremque veniam illum provident?
+                        DIGITAL is one of my favorite outreach activities.  DIGITAL is a conference aimed 
+                        to encourage girls in grades 9-12 to go into a computer science related field 
+                        post high school graduation.  In the photo above, I taught a group of 20 girls how 
+                        to program a game on a Microbit.
                     </p>
                 </div>
                 
@@ -335,9 +422,12 @@
                     <h2>Alpha Omega Epsilon</h2>
                     <h3>Director of Academic and Professional Committee</h3>
                     <p> 
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, sapiente? 
-                        Repellat reprehenderit architecto vitae accusantium vero? Iusto illo quam quo 
-                        soluta vero! Accusantium quas blanditiis rem nobis perspiciatis reiciendis est.
+                        Led team of 8 to create and host academic and professional events
+                         for sorority sisters.  I have hosted events like Finals de-stress
+                          with therapy dogs and mock interviews. I also met with my team
+                           monthly to plan these events.  In addition, I hosted study hours
+                            three times a week for at least 2 hours at a time.  Encouraging
+                             sister collaboration and academic success.
                     </p>
                 </div>
 
@@ -345,9 +435,13 @@
                     <h2>Alpha Omega Epsilon</h2>
                     <h3>Head of Academic and Professional Committee</h3>
                     <p> 
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, sapiente? 
-                        Repellat reprehenderit architecto vitae accusantium vero? Iusto illo quam quo 
-                        soluta vero! Accusantium quas blanditiis rem nobis perspiciatis reiciendis est.
+                        Assisted Director of Committee with monthly meetings, 
+                        planning events and study hours.  In addition, I assisted 
+                        in leading events such as Sister Seminars, Internship Search 
+                        and Career Fair Prep Workshop, Budgeting Post Grad Workshop.  
+                        I also created a budget and bought supplies needed for these 
+                        events
+
                     </p>
                 </div>
             </div>
@@ -358,11 +452,13 @@
             
                 <div class = "aoeChair">
                     <h2>Alpha Omega Epsilon</h2>
-                    <h3>Chair of Public Relations</h3>
+                    <h3>Co-Chair of Public Relations</h3>
                     <p> 
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, sapiente? 
-                        Repellat reprehenderit architecto vitae accusantium vero? Iusto illo quam quo 
-                        soluta vero! Accusantium quas blanditiis rem nobis perspiciatis reiciendis est.
+                        As Co-Chair of Public Relations, I would modify 
+                        flyers that contained information regarding upcoming 
+                        sorority recruitment dates.  In addition, I would 
+                        speak to 25+ students interested in joining AOE during 
+                        Student Org Night
                     </p>
                 </div>
 
@@ -370,9 +466,13 @@
                     <h2>Women in Technology</h2>
                     <h3>Member</h3>
                     <p> 
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, sapiente? 
-                        Repellat reprehenderit architecto vitae accusantium vero? Iusto illo quam quo 
-                        soluta vero! Accusantium quas blanditiis rem nobis perspiciatis reiciendis est.
+                        As a member of Women in Technology, I attend events 
+                        that help me professionally and give me a community of 
+                        women in the JMU CS department.  Two of my favorite 
+                        events are speed networking and company talks.  We have 
+                        CISE Industry partners come in and talk about their 
+                        experiences in the tech world and how they overcame 
+                        different challenges in their career.
                     </p>
                 </div>
             </div>

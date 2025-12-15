@@ -36,8 +36,14 @@ header {
 /* NAV STYLE */
 
 nav {
-    box-shadow: 3px 3px 5px  rgba(0, 0, 0, .1);
-    
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    background-color: var(--beige);
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, .1);
+    z-index: 1000;
 }
 
 nav ul {
@@ -117,6 +123,11 @@ nav a,
 #menuButton {
     display: none;
     margin-left:auto;
+    cursor: pointer;
+}
+
+#closeButton {
+    cursor: pointer;
 }
 
 /*Tablet View*/
@@ -153,6 +164,7 @@ nav a,
     object-fit: cover;/*image covers entire retainer while maintaining its aspect ratio*/
     object-position: center top;
     vertical-align: middle;
+    padding-top: 1em;
 } 
 
 .wrapper {
@@ -339,6 +351,32 @@ h2#title {
     padding-left: 2em;
 }
 
+/*Styling github button in projects*/
+#projects svg {
+    width: 32px;
+    height: 32px;
+    fill: black;
+}
+
+#projects svg:hover {
+    fill:var(--accent-color);
+}
+
+.projectTitle {
+    display: flex;          /* ← THIS fixes the vertical stacking */
+    flex-direction: row;    /* default, but explicit for clarity */
+    align-items: center;    /* vertical alignment */
+    gap: 10px;              /* space between h2 and svg */
+    margin-right: auto;
+}
+
+@media(max-width: 750px) {
+    .portfolio {
+        margin-right: auto;
+    }
+}
+
+
 
 /*Skills*/
 .skills h1 {
@@ -364,12 +402,10 @@ h2#title {
 
 .skills .wrapper > div:hover {
     background-color: var(--teal);
-    transition: .5s;
 }
 
 .skills .wrapper > div:hover * {
     background-color: var(--teal);
-    transition: .5s;
     color: white;
 }
 
