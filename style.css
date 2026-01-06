@@ -332,8 +332,9 @@ nav a,
 
 /* work Experience section*/
 .work-experience {
-    padding-top: 30px;
-    padding: 1em;
+    padding-top: 2em;
+    padding-left: 1em;
+    padding-right: 1em;
 }
 .work-experience h1 {
     text-align: center
@@ -380,6 +381,10 @@ h2#title {
 
 
 /*Skills*/
+
+.skills {
+    padding-top: 1em;
+}
 .skills h1 {
     text-align:center;
 }
